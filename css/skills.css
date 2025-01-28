@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10px 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Skill Categories Section */
+.skills-menu {
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border: 1px;
+  text-align: center;
+}
+
+.categories {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.category {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #f9532d;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Skills Display Area */
+.skills-display {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  border: 1px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+#skills-container {
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.skill-item {
+  padding: 5px;
+  margin: 5px 0;
+  border-bottom: 1px;
+}

@@ -1,0 +1,71 @@
+.scroll-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Main container */
+.slider-container {
+position: relative;
+width: 480px; /* Width of visible carousel area */
+overflow: hidden;
+margin: 20px auto;
+}
+
+.title-cert{
+width: 100%;
+max-width: none;
+text-align: center; /* Horizontally centers the heading text */
+padding: 30px; /* Adds padding around the content */
+}
+
+h2{
+    padding: 20px;
+}
+
+/* Left and right buttons with required styles */
+.btn-left,
+.btn-right {
+cursor: pointer;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 24px;
+border: 2px;
+padding: 10px;
+background-color: transparent;
+border-radius: 50%;
+z-index: 10;
+}
+
+.btn-left {
+left: 5px;
+}
+
+.btn-right {
+right: 5px;
+}
+
+/* Carousel wrapper - visible area */
+.carousel-wrapper {
+overflow: hidden;
+width: 100%;
+max-width: 500px; /* Replace 500px with your desired value */
+}
+
+
+/* The carousel itself - horizontally scrollable */
+.carousel {
+display: flex;
+transition: transform 0.3s ease;
+}
+
+/* Individual carousel items (badges) */
+.badge {
+flex: 0 0 160px; /* Set each badge's size */
+margin-right: 10px;
+padding: 10px;
+text-align: center;
+border: 1px;
+border-radius: 5px;
+}

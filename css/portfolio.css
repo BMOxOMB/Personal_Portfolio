@@ -1,0 +1,7 @@
+#projects {
+    text-align: center; /* Horizontally center child elements */
+}
+
+#projects div {
+    margin: 10px 0; /* Optional: Adds vertical space between the divs */
+}

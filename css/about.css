@@ -1,0 +1,88 @@
+.container-exp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border: 2px; 
+    font-family: Arial, sans-serif;
+}
+
+.title-exp{
+    width: 100%;
+    max-width: none;
+}
+
+/* Target specific elements for full width */
+.job-experience:nth-child(odd) {
+    flex-basis: calc(50% - 20px);
+}
+
+.job-experience:nth-child(even) {
+    flex-basis: calc(50% - 20px);
+}
+
+.job-experience {
+    flex: 1 1 calc(33.33% - 20px); /* Initial width: 33.33% with spacing */
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px; /* You might want to specify a border style here */
+    min-width: 250px; 
+}
+
+/* Target specific elements for full width */
+.job-experience:nth-child(odd),
+.job-experience:nth-child(even) {
+  flex-basis: calc(50% - 20px);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .job-experience {
+    flex-basis: calc(50% - 20px); /* Adjust for smaller screens */
+  }
+
+  .job-experience:nth-child(odd),
+  .job-experience:nth-child(even) {
+    flex-basis: calc(100% - 20px); /* Adjust for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .job-experience {
+    flex-basis: calc(100% - 20px); /* Adjust for even smaller screens */
+  }
+}
+
+
+.job-experience h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.job-experience p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .job-experience {
+        flex: 1 1 100%; /* Stack items vertically on smaller screens */
+        margin: 10px 0;
+    }
+}
+
+.detail {
+    grid-row: 1;
+  }
+  
+  .container-exp {
+    grid-row: 2;
+  }
